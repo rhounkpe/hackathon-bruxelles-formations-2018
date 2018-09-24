@@ -11,5 +11,6 @@
   </dependencies>
   <modules>
     <module>smart-city-domain</module>
+    <module>smart-city-repository</module>
   </modules>
 </project>
