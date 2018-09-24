@@ -7,12 +7,113 @@
   <version>1.0-SNAPSHOT</version>
   <name>smart-city</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-  </dependencies>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.3.RELEASE</version>
+  </parent>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+
   <modules>
-    <module>smart-city-domain</module>
     <module>smart-city-repository</module>
+    <module>smart-city-domain</module>
     <module>smart-city-rest</module>
     <module>smart-city-soap</module>
   </modules>
+
+
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>brussels.smart-city</groupId>
+        <artifactId>smart-city-domain</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>brussels.smart-city</groupId>
+        <artifactId>smart-city-repository</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>brussels.smart-city</groupId>
+        <artifactId>smart-city-rest</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+
+      <dependency>
+        <groupId>brussels.smart-city</groupId>
+        <artifactId>smart-city-soap</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <version>2.0.4.RELEASE</version>
+      </dependency>
+
+
+
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>2.0.4.RELEASE</version>
+      </dependency>
+
+
+      <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web-services -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web-services</artifactId>
+        <version>2.0.5.RELEASE</version>
+      </dependency>
+
+
+
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.12</version>
+      </dependency>
+
+
+      <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+      <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-jpa</artifactId>
+        <version>2.0.9.RELEASE</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+      <dependency>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.1-api</artifactId>
+        <version>1.0.2.Final</version>
+      </dependency>
+
+
+
+    </dependencies>
+  </dependencyManagement>
 </project>

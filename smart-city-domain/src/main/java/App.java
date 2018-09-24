@@ -1,4 +1,4 @@
-package brussels.smart-city.model;
+-city.model;
 
 /**
  * Hello world!
