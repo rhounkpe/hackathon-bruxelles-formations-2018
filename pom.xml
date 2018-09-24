@@ -13,5 +13,6 @@
     <module>smart-city-domain</module>
     <module>smart-city-repository</module>
     <module>smart-city-rest</module>
+    <module>smart-city-soap</module>
   </modules>
 </project>
