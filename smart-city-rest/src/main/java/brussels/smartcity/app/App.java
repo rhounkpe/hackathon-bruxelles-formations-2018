@@ -1,4 +1,4 @@
-package brussels.smartcity.rest-city.rest;
+package brussels.smartcity.app-city.rest;
 
 /**
  * Hello world!
