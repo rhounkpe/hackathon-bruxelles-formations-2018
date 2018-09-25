@@ -1,4 +1,4 @@
-package brussels.smartcity.soap-city.soap;
+package brussels.smartcity.soap;
 
 /**
  * Hello world!

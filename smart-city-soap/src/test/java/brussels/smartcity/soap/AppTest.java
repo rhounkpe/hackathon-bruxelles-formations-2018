@@ -1,6 +1,4 @@
-package brussels.smartcity.soap
-
--city.soap;
+package brussels.smartcity.soap;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

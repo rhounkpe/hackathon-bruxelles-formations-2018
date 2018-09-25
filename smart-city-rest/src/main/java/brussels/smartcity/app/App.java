@@ -2,11 +2,19 @@ package brussels.smartcity.app;
 
 import brussels.smartcity.model.Measurement;
 import brussels.smartcity.repository.IMeasurementRepository;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
+import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
+import com.amazonaws.services.dynamodbv2.document.Table;
+import com.amazonaws.services.dynamodbv2.model.TableDescription;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 
 /**
  * Bootstrap the app
@@ -14,12 +22,8 @@ import org.springframework.context.annotation.Bean;
  */
 
 @SpringBootApplication
-public class App 
+public class App
 {
-
-
-    @Autowired
-    private IMeasurementRepository measurementRepository;
 
     public static void main( String[] args )
     {
@@ -27,11 +31,4 @@ public class App
         SpringApplication.run(App.class, args);
     }
 
-    @Bean
-    CommandLineRunner runner() {
-        return args -> {
-            Measurement measurement = new Measurement();
-            measurementRepository.save(measurement);
-        };
-    }
 }
