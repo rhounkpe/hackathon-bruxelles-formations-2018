@@ -1,8 +1,14 @@
 package brussels.smartcity.model;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
+
+@Entity(name = "Measurement")
+@Table(name = "measurements")
 public class Measurement {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long identifier;
     private String deviceId;
     private LocalDateTime date;
