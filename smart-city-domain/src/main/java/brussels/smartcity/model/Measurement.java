@@ -3,6 +3,7 @@ package brussels.smartcity.model;
 import java.time.LocalDateTime;
 
 public class Measurement {
+    private Long identifier;
     private String deviceId;
     private LocalDateTime date;
     private float laeq15;
@@ -18,6 +19,23 @@ public class Measurement {
         this.date = date;
         this.laeq15 = laeq15;
         this.laeq60 = laeq60;
+    }
+
+    //Revoir ce constructeur en réutilisant le précédent
+    public Measurement(Long identifier, String deviceId, LocalDateTime date, float laeq15, float laeq60) {
+        this.identifier = identifier;
+        this.deviceId = deviceId;
+        this.date = date;
+        this.laeq15 = laeq15;
+        this.laeq60 = laeq60;
+    }
+
+    public Long getIdentifier() {
+        return identifier;
+    }
+
+    public void setIdentifier(Long identifier) {
+        this.identifier = identifier;
     }
 
     public String getDeviceId() {
