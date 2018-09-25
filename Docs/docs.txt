@@ -1,0 +1,30 @@
+google-maps-services-java
+https://github.com/googlemaps/google-maps-services-java
+
+
+Client Libraries for Google Maps Web Services
+https://developers.google.com/maps/documentation/geocoding/client-library
+
+
+Developer Guide: What is Geocoding?
+https://developers.google.com/maps/documentation/geocoding/intro#place-id
+
+
+Maps Static API
+https://developers.google.com/maps/documentation/maps-static/intro?hl=iw&csw=1
+
+
+Test Link
+https://maps.googleapis.com/maps/api/geocode/json?place_id=ChIJd8BlQ2BZwokRAFUEcm_qrcA&key=AIzaSyAp06X8SVLRt56KrW8JHY7_wQBlIo5UYxA
+
+
+
+Google serche key: Spring soap web service
+
+https://spring.io/guides/gs/producing-web-service/
+https://spring.io/guides/gs/consuming-web-service/
+
+
+
+https://github.com/HybZ/haappyears
+https://github.com/HybZ/dynamodb-springboot-example/blob/master/src/main/java/brussels/formation/model/Place.java
