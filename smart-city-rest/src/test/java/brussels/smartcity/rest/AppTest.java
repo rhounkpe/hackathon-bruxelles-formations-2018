@@ -1,6 +1,4 @@
-package brussels.smartcity.rest
-
--city.rest;
+package brussels.smartcity.rest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

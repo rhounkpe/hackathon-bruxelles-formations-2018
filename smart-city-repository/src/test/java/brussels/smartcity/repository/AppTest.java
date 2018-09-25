@@ -1,6 +1,4 @@
-package brussels.smartcity.repository
-
--city.repository;
+package brussels.smartcity.repository;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

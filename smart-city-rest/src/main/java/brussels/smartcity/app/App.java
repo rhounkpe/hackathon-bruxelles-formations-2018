@@ -16,6 +16,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class App 
 {
+
+
     @Autowired
     private IMeasurementRepository measurementRepository;
 
