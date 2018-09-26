@@ -5,17 +5,16 @@ import com.amazonaws.services.dynamodbv2.document.*;
 import com.amazonaws.services.dynamodbv2.document.spec.ScanSpec;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 @Repository
-public class DynamodbMeasurementRepository extends DynamodbRepository  {
+public class DynamodbMeasurementRepository extends DynamodbRepository {
 
     DynamoDB dynamoDB = new DynamoDB(getDynamoDBClient());
 
-    Table table  = dynamoDB.getTable("measurements_team5");
+    Table table = dynamoDB.getTable("Sound2Team5");
 
 
     public List<Measurement> getAll() {
@@ -25,7 +24,7 @@ public class DynamodbMeasurementRepository extends DynamodbRepository  {
                 .withFilterExpression("");
 
         try {
-            ItemCollection<ScanOutcome> items = table.scan(scanSpec);
+            ItemCollection<ScanOutcome> items = table.scan();
 
             Iterator<Item> iter = items.iterator();
 
@@ -39,8 +38,7 @@ public class DynamodbMeasurementRepository extends DynamodbRepository  {
 
                 measurements.add(measurement);
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         return measurements;
