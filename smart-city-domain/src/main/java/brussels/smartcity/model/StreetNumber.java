@@ -1,22 +1,27 @@
 package brussels.smartcity.model;
 
 public class StreetNumber {
-    private int long_name;
-    private int short_name;
+    private String long_name;
+    private String short_name;
 
-    public int getLong_name() {
+    public StreetNumber(String long_name, String short_name) {
+        this.long_name = long_name;
+        this.short_name = short_name;
+    }
+
+    public String getLong_name() {
         return long_name;
     }
 
-    public void setLong_name(int long_name) {
+    public void setLong_name(String long_name) {
         this.long_name = long_name;
     }
 
-    public int getShort_name() {
+    public String getShort_name() {
         return short_name;
     }
 
-    public void setShort_name(int short_name) {
+    public void setShort_name(String short_name) {
         this.short_name = short_name;
     }
 }

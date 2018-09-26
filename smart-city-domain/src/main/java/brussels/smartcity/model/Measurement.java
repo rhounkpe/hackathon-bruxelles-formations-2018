@@ -7,14 +7,14 @@ import java.time.LocalDateTime;
 
 public class Measurement {
 
-    private Long identifier;
+    //private Long identifier;
     private String deviceId;
     private LocalDateTime date;
     private double laeq15;
     private double laeq60;
     private double lceq15;
     private double lceq60;
-
+    private Place place;
 
 
     public Measurement() {}
@@ -27,17 +27,7 @@ public class Measurement {
         this.laeq60 = laeq60;
     }
 
-    //Revoir ce constructeur en réutilisant le précédent
-    public Measurement(Long identifier, String deviceId, LocalDateTime date, double laeq15, double laeq60) {
-        this.identifier = identifier;
-        this.deviceId = deviceId;
-        this.date = date;
-        this.laeq15 = laeq15;
-        this.laeq60 = laeq60;
-    }
-
-    public Measurement(Long identifier, String deviceId, LocalDateTime date, double laeq15, double laeq60, double lceq15, double lceq60) {
-        this.identifier = identifier;
+    public Measurement(String deviceId, LocalDateTime date, double laeq15, double laeq60, double lceq15, double lceq60) {
         this.deviceId = deviceId;
         this.date = date;
         this.laeq15 = laeq15;
@@ -46,13 +36,6 @@ public class Measurement {
         this.lceq60 = lceq60;
     }
 
-    public Long getIdentifier() {
-        return identifier;
-    }
-
-    public void setIdentifier(Long identifier) {
-        this.identifier = identifier;
-    }
 
     public String getDeviceId() {
         return deviceId;
@@ -100,5 +83,13 @@ public class Measurement {
 
     public void setLceq60(double lceq60) {
         this.lceq60 = lceq60;
+    }
+
+    public Place getPlace() {
+        return place;
+    }
+
+    public void setPlace(Place place) {
+        this.place = place;
     }
 }
