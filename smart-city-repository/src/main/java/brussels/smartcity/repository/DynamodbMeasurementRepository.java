@@ -48,21 +48,9 @@ public class DynamodbMeasurementRepository extends DynamodbRepository {
 
     public List<Measurement> getAll() {
 
-
-
-
-
-
         GeoApiContext context = new GeoApiContext.Builder()
                 .apiKey("AIzaSyAp06X8SVLRt56KrW8JHY7_wQBlIo5UYxA")
                 .build();
-
-
-
-
-
-
-
 
         List<Measurement> measurements = new ArrayList<>();
 
